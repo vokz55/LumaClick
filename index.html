@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LumaClick</title>
+    <link rel="icon" href="/images/LumaClickFavicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/background.css">
+    <link rel="stylesheet" href="./styles/buttons.css">
+    <link rel="stylesheet" href="./styles/shop.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+</head>
+<body class="body">
+    <main class="main">
+        
+        <div>
+            <p class="start-title">Welcome to</p>
+            <p class="start-title">LumaClick</p>
+            <p class="start-title first-clicks-text"></p>
+        </div>
+        <div class="auto-wrapper">
+            <div class="auto-count"></div>
+        </div>
+        <span class="count">0</span>
+        <button class="button clicker"><span class="click-name">CLICK</span><p class="button-indicator">+<span class="speed-display"></span></p></button>
+        <button class="button upgrade">UPGRADE<p class="button-indicator">Price: <span class="price__count"></span></p></button>
+        <button class="button reset">RESET</button>
+        <button class="button shop-button">SHOP</button>
+        <div class="credits-wrapper">
+            <img src="./images/LumaClick.svg" class="logo">
+            <p class="credits">First JavaScript project by Erikh &copy; 2024</p>
+        </div>
+
+    </main>
+    <div class="background">
+        <video class="video-background" autoplay muted>
+            <source src="/media/Never-Gonna-Give-You-Up.mp4" type="video/mp4">
+        </video>
+        <div class="bg-parallax">
+            <div class="parallax">
+                <div class="layer layer1"></div>
+                <div class="layer layer2"></div>
+                <div class="layer layer3"></div>
+            </div>
+        </div>
+        <div class="bg-color"></div>
+    </div>
+    <div class="shop">
+        <article class="product-card">
+            <h2 class="product-name">Auto-Click</h2>
+            <p class="product-info"><span class="auto-speed">1</span>/s</p>
+            <button class="button buy buy-auto-click-button">BUY<p class="button-indicator">Price: <span class="price-auto-click">100</span></p></button>
+        </article>
+        <article class="product-card">
+            <h2 class="product-name">Mega-Click</h2>
+            <p class="product-info">x3</p>
+            <button class="button buy buy-mega-click-button"><span class="buy-mega-click-button-name">BUY</span><p class="button-indicator">Price: <span class="price-mega-click">1000</span></p></button>
+        </article>
+    </div>
+    <div class="shop-background"></div>
+    <script src="./script/script.js"></script>
+    <script src="./script/parallax.js"></script>
+    <script src="./script/bonus.js"></script>
+    <script src="./script/shop.js"></script>
+    <script src="./script/reset.js"></script>
+</body>
+</html>

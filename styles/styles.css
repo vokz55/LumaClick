@@ -1,0 +1,155 @@
+html {
+  font-size: 16px;
+}
+
+.body {
+  position: relative;
+  font-family: 'Exo2', sans-serif;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.main {
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  width: 100%;
+  height: 100%;
+}
+
+.count {
+  color: #fff;
+  font-size: 12rem;
+  align-self: center;
+  justify-self: center;
+  font-weight: 700;
+  grid-column: 1/4;
+  grid-row: 3/5;
+  user-select: none;
+}
+
+
+/* AutoClick */
+
+.auto-wrapper {
+  width: 100%;
+  height: 100%;
+  grid-row: 2/3;
+  grid-column: 1/4;
+  position: relative;
+  overflow: hidden;
+}
+
+.auto-count {
+  width: 1000px;
+  aspect-ratio: 1/1;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0) 92%, rgba(255, 255, 255, 0.5) 100%);
+  border-radius: 50%;
+  border: 4px solid #fff;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  transition: 2s easy;
+}
+
+
+/* Background */
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-background {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Заполняет весь экран без искажения */
+  z-index: -1; /* Видео находится на заднем плане */
+  mix-blend-mode: multiply;
+  opacity: 0.6;
+  filter: grayscale(1);
+}
+
+
+/* Footer */
+
+.credits-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  grid-row: 7/8;
+  grid-column: 2/3;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.logo {
+  width: var(--pixel-xxxl);
+}
+
+.credits {
+  color: var(--main-color);
+  font-size: var(--pixel-s, 16px);
+  font-weight: 200;
+  text-align: center;
+
+}
+
+/* Hidden Text */
+
+.start-title {
+  position: absolute;
+  z-index: 2;
+  color: var(--main-color);
+  font-size: var(--pixel-xxl);
+  font-weight: 700;
+  top: 20%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -200%);
+  text-align: center;
+}
+
+.start-title:first-of-type {
+  animation: start 2s ease 1s;
+}
+
+.start-title:nth-of-type(2) {
+  animation: start 3s ease 2s;
+}
+
+.first-clicks-text {
+  display: none;
+  animation: start 3s ease;
+  font-size: var(--pixel-xl);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+
+/* 
+.title {
+  color: #fff;
+  align-self: flex-end;
+  justify-self: center;
+  grid-column: 2/3;
+} */  
