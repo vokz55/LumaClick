@@ -1,5 +1,5 @@
 html {
-  font-size: 16px;
+  font-size: 14.5px;
 }
 
 .body {
@@ -139,17 +139,14 @@ html {
   text-align: center;
 }
 
+@media (max-width: 1440px) {
+  html {
+    font-size: 13px;
+  }
+}
+
 @media (max-width: 768px) {
   html {
     font-size: 12px;
   }
 }
-
-
-/* 
-.title {
-  color: #fff;
-  align-self: flex-end;
-  justify-self: center;
-  grid-column: 2/3;
-} */  
