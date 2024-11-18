@@ -4,7 +4,7 @@
     position: absolute;
     z-index: 2;
     padding: var(--pixel-xxxl);
-    border: 4px solid #fff;
+    border: 4px solid var(--main-color);
     border-radius: var(--pixel-xxxl);
     top: 50%;
     left: 50%;
@@ -34,7 +34,7 @@
     width: 16rem;
     aspect-ratio: 2/3;
     backdrop-filter: blur(15px);
-    border: 3px solid #fff;
+    border: 3px solid var(--main-color);
     border-radius: var(--pixel-xxl);
     gap: var(--pixel-l);
     box-shadow: var(--pixel-xxs) var(--pixel-xxs) var(--pixel-xxs) var(--pixel-xxs) rgba(0,0,0, 0.15);

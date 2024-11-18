@@ -1,11 +1,10 @@
 html {
-  font-size: 14.5px;
+  font-size: 16px;
 }
 
 .body {
   position: relative;
   font-family: 'Exo2', sans-serif;
-  position: relative;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -13,7 +12,11 @@ html {
 }
 
 .main {
+  position: absolute;
+  top: 0;
+  right: 0;
   z-index: 1;
+  overflow: hidden;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(7, 1fr);
@@ -22,7 +25,7 @@ html {
 }
 
 .count {
-  color: #fff;
+  color: var(--main-color);
   font-size: 12rem;
   align-self: center;
   justify-self: center;
@@ -31,7 +34,6 @@ html {
   grid-row: 3/5;
   user-select: none;
 }
-
 
 /* AutoClick */
 
@@ -49,14 +51,13 @@ html {
   aspect-ratio: 1/1;
   background: linear-gradient(to top, rgba(255, 255, 255, 0) 92%, rgba(255, 255, 255, 0.5) 100%);
   border-radius: 50%;
-  border: 4px solid #fff;
+  border: 4px solid var(--main-color);
   position: absolute;
   top: 50px;
   left: 50%;
   transform: translate(-50%, 20%);
   transition: 2s easy;
 }
-
 
 /* Background */
 
@@ -76,13 +77,12 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Заполняет весь экран без искажения */
-  z-index: -1; /* Видео находится на заднем плане */
+  object-fit: cover;
+  z-index: -1;
   mix-blend-mode: multiply;
   opacity: 0.6;
   filter: grayscale(1);
 }
-
 
 /* Footer */
 
@@ -99,6 +99,7 @@ html {
 
 .logo {
   width: var(--pixel-xxxl);
+  color: var(--main-color);
 }
 
 .credits {
@@ -147,6 +148,6 @@ html {
 
 @media (max-width: 768px) {
   html {
-    font-size: 12px;
+    font-size: 11px;
   }
 }

@@ -9,11 +9,12 @@
   border-radius: var(--pixel-l);
   padding: var(--pixel-s) var(--pixel-l);
   cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--main-color-opacity);
   position: relative;
   transform: scale(1);
   transition: transform 0.5s ease;
   user-select: none;
+  backdrop-filter: blur(5px);
 }
 
 .button:active {

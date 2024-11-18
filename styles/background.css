@@ -37,22 +37,22 @@
 }
 
 .layer1 div {
-  border: 1px solid #fff;
+  border: 1px solid var(--main-color);
   width: 40px;
   height: 40px;
-  background-color: rgba(255, 255, 255, 0.3); 
+  background-color: var(--square-color-s);
 }
 
 .layer2 div { 
-  border: 2px solid #fff;
-  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid var(--main-color);
+  background-color: var(--square-color-m);
 }
 
 .layer3 div { 
-  border: 3px solid #fff;
+  border: 3px solid var(--main-color);
   width: 60px;
   height: 60px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: var(--square-color-l);
 }
 
 .bg-color {

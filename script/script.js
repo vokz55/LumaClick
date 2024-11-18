@@ -9,6 +9,7 @@ const buyAutoClickBtn = document.querySelector('.buy-auto-click-button');
 const priceAutoClick = document.querySelector('.price-auto-click');
 const buyMegaClickBtn = document.querySelector('.buy-mega-click-button');
 const priceMegaClick = document.querySelector('.price-mega-click');
+const header = document.querySelector('.main');
 
 let count = 0;
 let double = 1;
@@ -34,6 +35,7 @@ clickButton.addEventListener('click', () => {
   displayButtons();
   incrementCountFunc();
   firstClicksFunc();
+  settingsIconDisplay();
 });
 
 upgradeButton.addEventListener('click', () => {

@@ -25,6 +25,7 @@ resetButton.addEventListener('click', () => {
     root.style.setProperty('--first-accent-color-dynamic', 266);
     root.style.setProperty('--second-accent-color-dynamic', 300);
     lastDigitCount = 2;
+    settingsIconDisplayReset()
 });
 
 
