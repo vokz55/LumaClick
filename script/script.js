@@ -47,11 +47,10 @@ upgradeButton.addEventListener('click', () => {
 });
 
 function displayButtons() {
-  if(count >= 50) {
-    resetButton.style.display = 'flex';
-  };
 
-  if(count >= 100) {
+  resetButton.style.display = 'flex';
+
+  if(count >= 50) {
     shopButton.style.display = 'flex';
   }
   videoStart() 

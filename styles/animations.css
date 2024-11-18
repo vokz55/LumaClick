@@ -58,3 +58,12 @@
     background-position: 0% 50%;
   }
 };
+
+@keyframes rotate {
+  from {
+      transform: translate(150%, 0) rotate(180deg);
+  }
+  to {
+      transform: translate(0, 0) rotate(0deg);
+  }
+}

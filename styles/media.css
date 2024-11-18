@@ -1,0 +1,47 @@
+@media (max-width: 1440px) {
+    html {
+      font-size: 13px;
+    }
+  }
+  
+@media (max-width: 768px) {
+    html {
+      font-size: 11px;
+    }
+
+    .main {
+        grid-template-columns: 0 100% 0;
+    }
+
+    .shop {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        padding: var(--pixel-l);
+        gap: var(--pixel-l);
+    }
+
+    .shop-button {
+        grid-row: 7/8;
+        grid-column: 2/3;
+    }
+
+    .credits-wrapper {
+        padding: var(--pixel-m) 0;
+        grid-row: 1/8;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    .settings-grid {
+        width: 60%;
+    }
+
+    .settings-icon {
+        grid-column: 2/3;
+    }
+
+    .auto-count {
+        width: 65vh;
+        top: 60%;
+    }
+}

@@ -37,4 +37,6 @@ function settingsIconDisplay() {
 
 function settingsIconDisplayReset() {
     settingsButton.style.display = 'none';
+    settingsButton.classList.remove('active');
+    settingsGrid.classList.remove('active');
 };
